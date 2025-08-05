@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ÉTHEON | Lifestyle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Unbounded', sans-serif;
+      background-color: #fff;
+      color: #111;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: relative;
+      z-index: 1001;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .menu-toggle {
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 1002;
+      position: relative;
+    }
+
+    .side-nav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #fff;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 4rem;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .side-nav a {
+      padding: 1rem 2rem;
+      display: block;
+      text-decoration: none;
+      color: #111;
+      font-size: 1.2rem;
+      transition: 0.3s;
+    }
+
+    .side-nav a:hover {
+      background-color: #eee;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 2rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .hero-img {
+      margin-top: 2rem;
+      max-width: 90%;
+      height: auto;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">ÉTHEON</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <nav id="sideNav" class="side-nav">
+    <a href="landingpage.html" class="hover:underline text-xl">Home</a>
+    <a href="#">About</a>
+    <a href="lifestyle.html" class="hover:underline text-xl">Lifestyle</a>
+    <a href="HiTechPicks.html" class="hover:underline text-xl">Hi-Tech Picks</a>
+    <a href="#">Editorial</a>
+    <a href="#">Lookbook</a>
+    <a href="#">Collabs</a>
+    <a href="#">AI Stylist</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Lifestyle</h1>
+    <p>Elevated living at the intersection of function, beauty, and future-thinking rituals. Discover the ÉTHEON lifestyle — where every moment is curated, conscious, and connected.</p>
+    <img class="hero-img" src="your-lifestyle-image.jpg" alt="Lifestyle Image">
+  </section>
+
+  <section class="gallery">
+    <img src="lifestyle1.jpg" alt="Lifestyle item 1">
+    <img src="lifestyle2.jpg" alt="Lifestyle item 2">
+    <img src="lifestyle3.jpg" alt="Lifestyle item 3">
+    <img src="lifestyle4.jpg" alt="Lifestyle item 4">
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const sideNav = document.getElementById('sideNav');
+      sideNav.style.width = sideNav.style.width === '250px' ? '0' : '250px';
+    }
+  </script>
+
+</body>
+</html>
