@@ -40,33 +40,27 @@
   </header>
 
   <main class="flex-grow">
-    <section class="text-center py-16">
-      <h1 class="text-4xl md:text-5xl font-bold neon-text mb-4">LOOKBOOK</h1>
-      <p class="text-lg text-gray-300 max-w-2xl mx-auto">Step into a realm where every stitch speaks the future. Discover the vision behind ÉTHEON's intelligent fashion.</p>
-    </section>
+   <section class="relative w-[500px] mx-auto overflow-hidden">
+  <div class="flex transition-transform duration-500 ease-in-out" id="carousel" style="width: 4000px;">
+    <img src="lookbook1.png" class="w-[500px] h-[375px] object-cover flex-shrink-0" alt="Look 1">
+    <img src="lookbook2.png" class="w-[500px] h-[375px] object-cover flex-shrink-0" alt="Look 2">
+    <img src="lookbook3.png" class="w-[500px] h-[375px] object-cover flex-shrink-0" alt="Look 3">
+    <img src="lookbook4.png" class="w-[500px] h-[375px] object-cover flex-shrink-0" alt="Look 4">
+    <img src="lookbook5.png" class="w-[500px] h-[375px] object-cover flex-shrink-0" alt="Look 5">
+    <img src="lookbook6.png" class="w-[500px] h-[375px] object-cover flex-shrink-0" alt="Look 6">
+    <img src="lookbook7.png" class="w-[500px] h-[375px] object-cover flex-shrink-0" alt="Look 7">
+    <img src="lookbook8.png" class="w-[500px] h-[375px] object-cover flex-shrink-0" alt="Look 8">
+  </div>
 
-    <!-- Carousel -->
-    <section class="relative max-w-6xl mx-auto overflow-hidden">
-     <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
-        <!-- 8 images -->
-       <img src="lookbook1.png" class="w-[500px] h-[375px] mx-auto object-cover" alt="Look 1">
-       <img src="lookbook2.png" class="w-[500px] h-[375px] mx-auto object-cover" alt="Look 2">
-       <img src="lookbook3.png" class="w-[500px] h-[375px] mx-auto object-cover" alt="Look 3">
-       <img src="lookbook4.png" class="w-[500px] h-[375px] mx-auto object-cover" alt="Look 4">
-       <img src="lookbook5.png" class="w-[500px] h-[375px] mx-auto object-cover" alt="Look 5">
-       <img src="lookbook6.png" class="w-[500px] h-[375px] mx-auto object-cover" alt="Look 6">
-       <img src="lookbook7.png" class="w-[500px] h-[375px] mx-auto object-cover" alt="Look 7">
-       <img src="lookbook8.png" class="w-[500px] h-[375px] mx-auto object-cover" alt="Look 8">
-     </div>
+  <!-- Controls -->
+  <div class="absolute top-1/2 left-0 transform -translate-y-1/2 px-4">
+    <button onclick="prevSlide()" class="text-white text-3xl">❮</button>
+  </div>
+  <div class="absolute top-1/2 right-0 transform -translate-y-1/2 px-4">
+    <button onclick="nextSlide()" class="text-white text-3xl">❯</button>
+  </div>
+</section>
 
-      <!-- Controls -->
-      <div class="absolute top-1/2 left-0 transform -translate-y-1/2 px-4">
-        <button onclick="prevSlide()" class="text-white text-3xl">❮</button>
-      </div>
-      <div class="absolute top-1/2 right-0 transform -translate-y-1/2 px-4">
-        <button onclick="nextSlide()" class="text-white text-3xl">❯</button>
-      </div>
-    </section>
   </main>
 
   <footer class="mt-20 text-center text-xs text-gray-500 py-12 border-t border-gray-800">
@@ -99,6 +93,7 @@
 </body>
 
 </html>
+
 
 
 
